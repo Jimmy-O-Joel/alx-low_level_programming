@@ -2,6 +2,7 @@
 
 /**
  *reset_to_98 - updates the value to a pointer
+ *@n: input integer.
  * Return: No value returned
  */
 
