@@ -7,10 +7,10 @@
  *Return: no return value                                                       
  */                                                                             
                                                                                  
- void swap_int(int *a, int *b)                                                   
- {                                                                               
-         int temp;                                                               
-         temp = *b;                                                              
-         *b = *a;                                                                
-         *a = temp;                                                              
- } 
+void swap_int(int *a, int *b)                                                   
+{                                                                               
+        int temp;                                                               
+        temp = *b;                                                              
+        *b = *a;                                                                
+        *a = temp;                                                              
+} 
