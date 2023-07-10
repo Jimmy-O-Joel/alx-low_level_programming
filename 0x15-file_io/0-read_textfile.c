@@ -19,22 +19,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return (0);
 
-	file_d = open(filename, 0_RDONLY);
+	file_d = open(filename, O_RDONLY);
 
 	if (file_d == -1)
 		return (0);
 
-	buf = malloc(sizeof(char) * (letters));
+	buffer = malloc(sizeof(char) * (letters));
 
-	if (!buf)
+	if (!buffer)
 		return (0);
 
-	nread = read(file_d, buf, letters);
-	nwrite = write(STDOUT_FILENO, buf, nread);
+	nread = read(file_d, buffer, letters);
+	nwrite = write(STDOUT_FILENO, buffer, nread);
 
 	close(file_d);
 
-	free(buf);
+	free(buffer);
 
 	return (nwrite);
 }
